@@ -1,0 +1,74 @@
+{
+  "id": "ardoise.github",
+  "name": {
+    "en": "GitHub",
+    "fr": "GitHub"
+  },
+  "version": "1.0.0",
+  "api": 1,
+  "description": {
+    "en": "The pull requests of the repository (list, make, read with files, diffs and comments, review, merge, close), the runs of GitHub Actions and the tags, in a tab of the Git panel",
+    "fr": "Les pull requests du dépôt (lister, créer, lire avec fichiers, diffs et commentaires, relire, fusionner, fermer), les exécutions de GitHub Actions et les étiquettes, dans un onglet du panneau Git"
+  },
+  "author": "Ardoise Editor",
+  "repository": "ardoise-editor/plugin-github",
+  "license": "MIT",
+  "command": [
+    "bin/github"
+  ],
+  "events": [
+    "active_file"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "id": "github.show",
+        "title": {
+          "en": "GitHub: Pull Requests",
+          "fr": "GitHub : pull requests"
+        }
+      },
+      {
+        "id": "github.pr_new",
+        "title": {
+          "en": "GitHub: New Pull Request…",
+          "fr": "GitHub : nouvelle pull request…"
+        }
+      },
+      {
+        "id": "github.actions",
+        "title": {
+          "en": "GitHub: Actions",
+          "fr": "GitHub : Actions"
+        }
+      },
+      {
+        "id": "github.tags",
+        "title": {
+          "en": "GitHub: Tags",
+          "fr": "GitHub : étiquettes"
+        }
+      }
+    ],
+    "panels": [
+      {
+        "id": "main",
+        "title": {
+          "en": "GitHub",
+          "fr": "GitHub"
+        },
+        "icon": "",
+        "location": "bottom",
+        "group": "git"
+      },
+      {
+        "id": "settings",
+        "title": {
+          "en": "GitHub",
+          "fr": "GitHub"
+        },
+        "location": "settings"
+      }
+    ]
+  }
+}
