@@ -33,7 +33,7 @@ dependencies = [
 
 [[package]]
 name = "ardoise-github"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "ardoise-plugin",
  "chrono",
